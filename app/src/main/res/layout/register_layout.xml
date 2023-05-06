@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context=".RegisterActivity"
+    android:background="@color/my_blue">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RegisterForm"
+        android:layout_above="@id/lnRegister"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/size10dp"
+        android:layout_margin="@dimen/size10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+    <LinearLayout
+        android:id="@+id/lnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <EditText
+            android:id="@+id/idEdtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/username"
+            android:padding="@dimen/size10dp"
+            android:layout_margin="@dimen/size10dp"
+            />
+        <EditText
+            android:id="@+id/idEdtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/password"
+            android:padding="@dimen/size10dp"
+            android:layout_margin="@dimen/size10dp"
+            android:inputType="textPassword"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/idBtnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Register"
+                android:layout_weight="1"
+                android:padding="@dimen/size10dp"
+                android:layout_margin="@dimen/size10dp"
+                />
+            <Button
+                android:id="@+id/idBtnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Login"
+                android:layout_weight="1"
+                android:padding="@dimen/size10dp"
+                android:layout_margin="@dimen/size10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
